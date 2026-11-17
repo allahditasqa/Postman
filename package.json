@@ -1,0 +1,14 @@
+{
+  "name": "postman-newman-demo",
+  "version": "1.0.0",
+  "description": "Postman collection + Newman runner against JSONPlaceholder",
+  "private": true,
+  "scripts": {
+    "test": "newman run collections/JSONPlaceholder.postman_collection.json -e environments/jsonplaceholder.postman_environment.json",
+    "test:report": "newman run collections/JSONPlaceholder.postman_collection.json -e environments/jsonplaceholder.postman_environment.json -r cli,htmlextra --reporter-htmlextra-export reports/report.html"
+  },
+  "devDependencies": {
+    "newman": "^6.2.1",
+    "newman-reporter-htmlextra": "^1.23.1"
+  }
+}
