@@ -5,10 +5,11 @@
   "private": true,
   "scripts": {
     "test": "newman run collections/JSONPlaceholder.postman_collection.json -e environments/jsonplaceholder.postman_environment.json",
-    "test:report": "newman run collections/JSONPlaceholder.postman_collection.json -e environments/jsonplaceholder.postman_environment.json -r cli,htmlextra --reporter-htmlextra-export reports/report.html"
+    "test:report": "node tools/run-newman.js",
+    "docs:csv": "node tools/docs.js csv",
+    "docs:check": "node tools/docs.js check"
   },
   "devDependencies": {
-    "newman": "^6.2.1",
-    "newman-reporter-htmlextra": "^1.23.1"
+    "newman": "^6.2.1"
   }
 }

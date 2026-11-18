@@ -12,9 +12,12 @@ jobs:
         with:
           node-version: 20
       - run: npm install
-      - run: npm run test:report
+      - name: Traceability check (documents, master CSV, collection)
+        run: npm run docs:check
+      - name: Run Newman per folder and write the module-wise reports
+        run: npm run test:report
       - uses: actions/upload-artifact@v4
         if: always()
         with:
-          name: newman-report
+          name: newman-reports
           path: reports

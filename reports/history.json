@@ -1,0 +1,39 @@
+[
+  {
+    "RunId": "20261118-123920",
+    "StartedAt": "2026-11-18T07:39:20.089Z",
+    "DurationSeconds": 3.1,
+    "Modules": [
+      {
+        "Module": "Posts",
+        "ReportPath": "posts/Posts test 18-11-2026_12-39-20.html",
+        "CsvPath": "posts/Posts test cases 18-11-2026_12-39-20.csv",
+        "Total": 7,
+        "Passed": 7,
+        "Failed": 0,
+        "Skipped": 0,
+        "DurationSeconds": 2.8
+      },
+      {
+        "Module": "Users",
+        "ReportPath": "users/Users test 18-11-2026_12-39-20.html",
+        "CsvPath": "users/Users test cases 18-11-2026_12-39-20.csv",
+        "Total": 1,
+        "Passed": 1,
+        "Failed": 0,
+        "Skipped": 0,
+        "DurationSeconds": 0.1
+      },
+      {
+        "Module": "Negative",
+        "ReportPath": "negative/Negative test 18-11-2026_12-39-20.html",
+        "CsvPath": "negative/Negative test cases 18-11-2026_12-39-20.csv",
+        "Total": 2,
+        "Passed": 2,
+        "Failed": 0,
+        "Skipped": 0,
+        "DurationSeconds": 0.2
+      }
+    ]
+  }
+]
